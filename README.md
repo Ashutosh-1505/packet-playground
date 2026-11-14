@@ -35,7 +35,7 @@
 
 ## 🕸️ 01 · Network Topologies
 
-`Star · Ring · Mesh · Bus · Hybrid` &nbsp;|&nbsp;
+`Star · Ring · Mesh · Bus · Hybrid` 
 
 All five topologies in one workspace: 19 switches, 1 hub and 18 PCs. The hybrid joins the ring and the mesh through one extra switch.
 
@@ -54,8 +54,7 @@ All five topologies in one workspace: 19 switches, 1 hub and 18 PCs. The hybrid 
 
 ## 🕸️ 02 · Router Configuration
 
-`Router Configuration · IP Addressing` &nbsp;|&nbsp;
-
+`Router Configuration · IP Addressing` 
 Routers join separate networks. Two independent setups with hubs, switches and 23 PCs.
 
 <img src="assets/02-router-configuration.svg" alt="Router configuration diagram" width="100%" />
@@ -86,7 +85,7 @@ interface GigabitEthernet0/2
 
 ## 🕸️ 03 · DHCP Server and Relay
 
-`DHCP · DHCP Relay` &nbsp;|&nbsp; 
+`DHCP · DHCP Relay`  
 
 DHCP on the same LAN, and across a router. Routers drop broadcasts, so the relay forwards requests to the server.
 
@@ -115,8 +114,7 @@ Pool `LAN` on `Server3`: `192.168.1.0/24`, gateway `192.168.1.1`, range `.10` to
 
 ## 🕸️ 04 · DNS, HTTP, FTP and DHCP Servers
 
-`DNS · HTTP · FTP · DHCP` &nbsp;|&nbsp; 
-
+`DNS · HTTP · FTP · DHCP` 
 Seven servers in two scenarios. `www.ashu.com` resolves to the web server in both.
 
 <img src="assets/04-dns-http-ftp-dhcp-servers.svg" alt="Servers diagram" width="100%" />
@@ -136,7 +134,7 @@ Seven servers in two scenarios. `www.ashu.com` resolves to the web server in bot
 
 ## 🕸️ 05 · Email Server
 
-`SMTP · POP3` &nbsp;|&nbsp; 📄 
+`SMTP · POP3` 
 
 One mail server for `ashutosh.com` with two users on a single switch.
 
@@ -155,7 +153,7 @@ One mail server for `ashutosh.com` with two users on a single switch.
 
 ## 🕸️ 06 · Static Routing, 2 Routers
 
-`Static Routing` &nbsp;|&nbsp; 
+`Static Routing` 
 
 Routers only know their own networks, so each one is told where the other LAN lives.
 
@@ -181,7 +179,7 @@ ip route 192.168.10.0 255.255.255.0 192.168.30.1
 
 ## 🕸️ 07 · Static Routing, 3 Routers
 
-`Multi-hop Static Routing` &nbsp;|&nbsp;
+`Multi-hop Static Routing` 
 
 Same two LANs, but traffic now crosses a middle router.
 
