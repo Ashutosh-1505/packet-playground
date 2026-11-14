@@ -35,7 +35,7 @@
 
 ## 🕸️ 01 · Network Topologies
 
-`Star · Ring · Mesh · Bus · Hybrid` &nbsp;|&nbsp; 📄 `01-network-topologies.pkt` ← `topologies.pkt`
+`Star · Ring · Mesh · Bus · Hybrid` &nbsp;|&nbsp;
 
 All five topologies in one workspace: 19 switches, 1 hub and 18 PCs. The hybrid joins the ring and the mesh through one extra switch.
 
@@ -54,7 +54,7 @@ All five topologies in one workspace: 19 switches, 1 hub and 18 PCs. The hybrid 
 
 ## 🕸️ 02 · Router Configuration
 
-`Router Configuration · IP Addressing` &nbsp;|&nbsp; 📄 `02-router-configuration.pkt` ← `configure_router.pkt`
+`Router Configuration · IP Addressing` &nbsp;|&nbsp;
 
 Routers join separate networks. Two independent setups with hubs, switches and 23 PCs.
 
@@ -86,7 +86,7 @@ interface GigabitEthernet0/2
 
 ## 🕸️ 03 · DHCP Server and Relay
 
-`DHCP · DHCP Relay` &nbsp;|&nbsp; 📄 `03-dhcp-server-and-relay.pkt` ← `DHCP_configuration.pkt`
+`DHCP · DHCP Relay` &nbsp;|&nbsp; 
 
 DHCP on the same LAN, and across a router. Routers drop broadcasts, so the relay forwards requests to the server.
 
@@ -115,7 +115,7 @@ Pool `LAN` on `Server3`: `192.168.1.0/24`, gateway `192.168.1.1`, range `.10` to
 
 ## 🕸️ 04 · DNS, HTTP, FTP and DHCP Servers
 
-`DNS · HTTP · FTP · DHCP` &nbsp;|&nbsp; 📄 `04-dns-http-ftp-dhcp-servers.pkt` ← `servers.pkt`
+`DNS · HTTP · FTP · DHCP` &nbsp;|&nbsp; 
 
 Seven servers in two scenarios. `www.ashu.com` resolves to the web server in both.
 
@@ -136,7 +136,7 @@ Seven servers in two scenarios. `www.ashu.com` resolves to the web server in bot
 
 ## 🕸️ 05 · Email Server
 
-`SMTP · POP3` &nbsp;|&nbsp; 📄 `05-email-server-smtp-pop3.pkt` ← `email_server.pkt`
+`SMTP · POP3` &nbsp;|&nbsp; 📄 
 
 One mail server for `ashutosh.com` with two users on a single switch.
 
@@ -155,7 +155,7 @@ One mail server for `ashutosh.com` with two users on a single switch.
 
 ## 🕸️ 06 · Static Routing, 2 Routers
 
-`Static Routing` &nbsp;|&nbsp; 📄 `06-static-routing-2-routers.pkt` ← `static_routing_with_2_routers.pkt`
+`Static Routing` &nbsp;|&nbsp; 
 
 Routers only know their own networks, so each one is told where the other LAN lives.
 
@@ -181,7 +181,7 @@ ip route 192.168.10.0 255.255.255.0 192.168.30.1
 
 ## 🕸️ 07 · Static Routing, 3 Routers
 
-`Multi-hop Static Routing` &nbsp;|&nbsp; 📄 `07-static-routing-3-routers.pkt` ← `static_routing_with_3_routers.pkt`
+`Multi-hop Static Routing` &nbsp;|&nbsp;
 
 Same two LANs, but traffic now crosses a middle router.
 
