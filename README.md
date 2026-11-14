@@ -12,16 +12,16 @@
 
 ---
 
-## ✨ Simulations
+## 🌠 Simulations
 
 | | Simulation | Covers |
 |:-:|---|---|
-| 🔌 | [01 · Router Configuration](#-01--router-configuration) | Router setup, IP addressing |
-| 📡 | [02 · DHCP Server and Relay](#-02--dhcp-server-and-relay) | DHCP, relay agent |
-| 📧 | [03 · Email Server](#-03--email-server) | SMTP, POP3 |
-| 🌍 | [04 · DNS, HTTP, FTP and DHCP Servers](#-04--dns-http-ftp-and-dhcp-servers) | Server services |
-| 🛣️ | [05 · Static Routing, 2 Routers](#-05--static-routing-2-routers) | Static routes |
-| 🚀 | [06 · Static Routing, 3 Routers](#-06--static-routing-3-routers) | Multi-hop routes |
+| 🕸️ | [01 · Router Configuration](#-01--router-configuration) | Router setup, IP addressing |
+| 🕸️ | [02 · DHCP Server and Relay](#-02--dhcp-server-and-relay) | DHCP, relay agent |
+| 🕸️ | [03 · Email Server](#-03--email-server) | SMTP, POP3 |
+| 🕸️ | [04 · DNS, HTTP, FTP and DHCP Servers](#-04--dns-http-ftp-and-dhcp-servers) | Server services |
+| 🕸️ | [05 · Static Routing, 2 Routers](#-05--static-routing-2-routers) | Static routes |
+| 🕸️ | [06 · Static Routing, 3 Routers](#-06--static-routing-3-routers) | Multi-hop routes |
 | 🕸️ | [07 · Network Topologies](#-07--network-topologies) | Star, ring, mesh, bus, hybrid |
 
 ## 🗂️ Files
@@ -38,7 +38,7 @@ Renamed so they sort in learning order.
 | `static_routing_with_3_routers.pkt` | [06-static-routing-3-routers.pkt](simulations/06-static-routing-3-routers.pkt) |
 | `topologies.pkt` | [07-network-topologies.pkt](simulations/07-network-topologies.pkt) |
 
-## 🚀 Quick Start
+## ♨️ Quick Start
 
 1. Install **Cisco Packet Tracer 9.0** or newer.
 2. `git clone https://github.com/Ashutosh-1505/packet-tracer-networking-simulations.git`
@@ -46,7 +46,7 @@ Renamed so they sort in learning order.
 
 ---
 
-## 🔌 01 · Router Configuration
+## 🕸️ 01 · Router Configuration
 
 `Router Configuration · IP Addressing` &nbsp;|&nbsp; 📄 `01-router-configuration.pkt` ← `configure_router.pkt`
 
@@ -55,7 +55,7 @@ Routers join separate networks. Two independent setups with hubs, switches and 2
 <img src="assets/01-router-configuration.svg" alt="Router configuration diagram" width="100%" />
 
 <details>
-<summary>⚙️ <b>Config and test steps</b></summary>
+<summary> ❄️ <b>Config and test steps</b></summary>
 
 ```
 interface GigabitEthernet0/0
@@ -72,13 +72,13 @@ interface GigabitEthernet0/2
 - [ ] Ping from a `192.168.10.x` PC to a `192.168.20.x` PC
 - [ ] `show ip interface brief` shows every port `up`
 
-⚠️ The PC named `192.168.30.21` has IP `192.168.30.20`, a duplicate. Change it to `.21`.
+♨️ The PC named `192.168.30.21` has IP `192.168.30.20`, a duplicate. Change it to `.21`.
 
 </details>
 
 ---
 
-## 📡 02 · DHCP Server and Relay
+## 🕸️ 02 · DHCP Server and Relay
 
 `DHCP · DHCP Relay` &nbsp;|&nbsp; 📄 `02-dhcp-server-and-relay.pkt` ← `DHCP_configuration.pkt`
 
@@ -87,7 +87,7 @@ DHCP on the same LAN, and across a router. Routers drop broadcasts, so the relay
 <img src="assets/02-dhcp-server-and-relay.svg" alt="DHCP and relay diagram" width="100%" />
 
 <details>
-<summary>⚙️ <b>Config and test steps</b></summary>
+<summary> ❄️ <b>Config and test steps</b></summary>
 
 ```
 interface GigabitEthernet0/0/1
@@ -101,13 +101,13 @@ Pool `LAN` on `Server3`: `192.168.1.0/24`, gateway `192.168.1.1`, range `.10` to
 - [ ] Set `PC7` to **DHCP** and confirm it gets `192.168.1.10` to `.59`
 - [ ] Remove the `ip helper-address` line and watch DHCP fail
 
-⚠️ Pools on `Server1` have gateway `0.0.0.0`, so those clients get no gateway.
+♨️ Pools on `Server1` have gateway `0.0.0.0`, so those clients get no gateway.
 
 </details>
 
 ---
 
-## 📧 03 · Email Server
+## 🕸️ 03 · Email Server
 
 `SMTP · POP3` &nbsp;|&nbsp; 📄 `03-email-server-smtp-pop3.pkt` ← `email_server.pkt`
 
@@ -116,7 +116,7 @@ One mail server for `ashutosh.com` with two users on a single switch.
 <img src="assets/03-email-server-smtp-pop3.svg" alt="Email server diagram" width="100%" />
 
 <details>
-<summary>🧪 <b>Test steps</b></summary>
+<summary> ⚓ <b>Test steps</b></summary>
 
 - [ ] On a PC open *Desktop → Email*, both servers point to `192.168.10.1`
 - [ ] Send a mail from `u2` to `u1`
@@ -126,7 +126,7 @@ One mail server for `ashutosh.com` with two users on a single switch.
 
 ---
 
-## 🌍 04 · DNS, HTTP, FTP and DHCP Servers
+## 🕸️ 04 · DNS, HTTP, FTP and DHCP Servers
 
 `DNS · HTTP · FTP · DHCP` &nbsp;|&nbsp; 📄 `04-dns-http-ftp-dhcp-servers.pkt` ← `servers.pkt`
 
@@ -135,19 +135,19 @@ Seven servers in two scenarios. `www.ashu.com` resolves to the web server in bot
 <img src="assets/04-dns-http-ftp-dhcp-servers.svg" alt="Servers diagram" width="100%" />
 
 <details>
-<summary>🧪 <b>Test steps</b></summary>
+<summary> ⚓ <b>Test steps</b></summary>
 
 - [ ] Open `http://www.ashu.com` in a PC browser
 - [ ] `ping www.ashu.com` resolves
 - [ ] `ftp 192.168.10.4` (login `cisco`)
 
-⚠️ In Scenario A the servers list gateway `193.168.10.1`, which is not on `192.168.10.0/24`. Clear or correct it.
+♨️ In Scenario A the servers list gateway `193.168.10.1`, which is not on `192.168.10.0/24`. Clear or correct it.
 
 </details>
 
 ---
 
-## 🛣️ 05 · Static Routing, 2 Routers
+## 🕸️ 05 · Static Routing, 2 Routers
 
 `Static Routing` &nbsp;|&nbsp; 📄 `05-static-routing-2-routers.pkt` ← `static_routing_with_2_routers.pkt`
 
@@ -156,7 +156,7 @@ Routers only know their own networks, so each one is told where the other LAN li
 <img src="assets/05-static-routing-2-routers.svg" alt="Static routing with 2 routers diagram" width="100%" />
 
 <details>
-<summary>⚙️ <b>Config and test steps</b></summary>
+<summary> ❄️ <b>Config and test steps</b></summary>
 
 ```
 ! Router0
@@ -173,7 +173,7 @@ ip route 192.168.10.0 255.255.255.0 192.168.30.1
 
 ---
 
-## 🚀 06 · Static Routing, 3 Routers
+## 🕸️ 06 · Static Routing, 3 Routers
 
 `Multi-hop Static Routing` &nbsp;|&nbsp; 📄 `06-static-routing-3-routers.pkt` ← `static_routing_with_3_routers.pkt`
 
@@ -182,7 +182,7 @@ Same two LANs, but traffic now crosses a middle router.
 <img src="assets/06-static-routing-3-routers.svg" alt="Static routing with 3 routers diagram" width="100%" />
 
 <details>
-<summary>⚙️ <b>Config and test steps</b></summary>
+<summary> ❄️ <b>Config and test steps</b></summary>
 
 ```
 ! Router0
@@ -212,7 +212,7 @@ All five topologies in one workspace: 19 switches, 1 hub and 18 PCs. The hybrid 
 <img src="assets/07-network-topologies.svg" alt="Network topologies diagram" width="100%" />
 
 <details>
-<summary>🧪 <b>Test steps</b></summary>
+<summary> 🏴‍☠️ <b>Test steps</b></summary>
 
 - [ ] Ping across the ring in Simulation mode and note the path
 - [ ] Cut one link in the mesh, traffic still flows
@@ -224,7 +224,7 @@ All five topologies in one workspace: 19 switches, 1 hub and 18 PCs. The hybrid 
 
 <div align="center">
 
-**Ashutosh Mohanty** · BTech CSE, Silicon University
+**Ashutosh Mohanty** 
 
 [![GitHub](https://img.shields.io/badge/GitHub-Ashutosh--1505-181717?style=for-the-badge&logo=github)](https://github.com/Ashutosh-1505)
 
