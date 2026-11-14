@@ -24,19 +24,6 @@
 | 🕸️ | [06 · Static Routing, 3 Routers](#-06--static-routing-3-routers) | Multi-hop routes |
 | 🕸️ | [07 · Network Topologies](#-07--network-topologies) | Star, ring, mesh, bus, hybrid |
 
-## 🗂️ Files
-
-Renamed so they sort in learning order.
-
-| Original name | New name |
-|---|---|
-| `configure_router.pkt` | [01-router-configuration.pkt](simulations/01-router-configuration.pkt) |
-| `DHCP_configuration.pkt` | [02-dhcp-server-and-relay.pkt](simulations/02-dhcp-server-and-relay.pkt) |
-| `email_server.pkt` | [03-email-server-smtp-pop3.pkt](simulations/03-email-server-smtp-pop3.pkt) |
-| `servers.pkt` | [04-dns-http-ftp-dhcp-servers.pkt](simulations/04-dns-http-ftp-dhcp-servers.pkt) |
-| `static_routing_with_2_routers.pkt` | [05-static-routing-2-routers.pkt](simulations/05-static-routing-2-routers.pkt) |
-| `static_routing_with_3_routers.pkt` | [06-static-routing-3-routers.pkt](simulations/06-static-routing-3-routers.pkt) |
-| `topologies.pkt` | [07-network-topologies.pkt](simulations/07-network-topologies.pkt) |
 
 ## ♨️ Quick Start
 
